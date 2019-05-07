@@ -10,7 +10,8 @@ public class FileEncryptor {
 		String s = JOptionPane.showInputDialog("Give me message");
 		String es = "";
 		for(int i = 0;i<s.length();i++) {
-			es += (char) (s.charAt(i) - 1200);
+			es += (char) (s.charAt(i) - 100);
+			
 		}
 		FileWriter fw;
 		try {

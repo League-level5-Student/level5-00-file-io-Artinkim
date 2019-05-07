@@ -17,13 +17,15 @@ public class FileDecryptor {
 				int c = fr.read();
 				String s = "";
 				while(c != -1) {
-					 s += fr.read();
-					 c = fr.read();
+					 s += (char) c;
+					 System.out.println(c);
+					 c = fr.read(); 
 				}
 				fr.close();
 				String ns = "";
 				for(int i = 0;i<s.length();i++) {
-					ns += (char) (s.charAt(i) + 1200);
+					
+					ns += (char) (s.charAt(i) + 100);
 				}
 				JOptionPane.showMessageDialog(null, ns);
 			} catch (FileNotFoundException e) {
