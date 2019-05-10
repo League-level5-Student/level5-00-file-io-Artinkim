@@ -37,6 +37,19 @@ public class ToDoList implements ActionListener {
 		b4.addActionListener(this);
 		b5.addActionListener(this);
 		window.pack();	
+		try {
+			BufferedReader br = new BufferedReader(new FileReader("ToDoList.txt"));
+			String c = br.readLine();
+			int n = 0;
+			while(c != null) {
+				list.add(c);
+				n++;
+				c = br.readLine();
+			}
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
 		
 	}
 	public static void main(String[] args) {

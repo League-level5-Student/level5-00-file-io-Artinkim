@@ -17,7 +17,7 @@ import static org.junit.Assert.assertEquals;
  *
  * Challenge: Complete the SaveData class so that the test passes.
  */
-public class Serialization {
+public class Serialization  {
 	private static final String DATA_FILE = "src/_04_Serialization/saved.dat";
 
 	@Test
