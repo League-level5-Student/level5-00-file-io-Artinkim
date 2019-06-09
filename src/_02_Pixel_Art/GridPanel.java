@@ -1,4 +1,4 @@
-package _02_Pixel_Art;
+sdfpackage _02_Pixel_Art;
 
 import java.awt.Color;
 import java.awt.Dimension;
